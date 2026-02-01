@@ -5,7 +5,7 @@
 [![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9D%A4-blue.svg)](https://github.com/ewanqian/less-media-art)
 [![Research Framework](https://img.shields.io/badge/Type-Research%20Framework-orange.svg)]()
 
-> **一个关于限制、本地与反思的数字艺术开放研究框架**
+> AI时代的创作伦理实验场，通过约束、本地与反思重获主体性 | An experimental field for creative ethics in the AI era, reclaiming agency through constraints, locality, and reflection
 
 ---
 
@@ -51,6 +51,28 @@
 
 ---
 
+## 特色方法：十轮批判对话
+
+受Lev Manovich关于AI时代创造力的研究启发，我们开发了一种特殊的创作方法：
+
+1. **不是**向AI要答案
+2. **而是**让AI问你问题
+3. **通过**十轮深入对话
+4. **显形**你自己的思维过程
+
+这种方法将AI从"工具"转变为"镜子"，帮助你看见自己的假设、偏见和思维路径。
+
+### 使用苏格拉底模式
+
+```bash
+cd tools/constraint-cli
+python socratic.py --topic "你想探索的主题"
+```
+
+AI将扮演提问者，通过十轮深入对话帮助你反思，而不是直接给你答案。
+
+---
+
 ## 项目结构
 
 ```
@@ -58,15 +80,12 @@ less-media-art/
 ├── 📄 README.md                 # 本文件
 ├── 📁 docs/                     # 知识库（Markdown源文件）
 │   ├── index.md                 # 首页内容
-│   ├── 📁 theory/               # 理论词条
-│   │   ├── media-subtraction.md
-│   │   ├── aesthetics-of-constraint.md
-│   │   ├── ai-creativity-paradox.md
-│   │   └── ...
+│   ├── 📁 theory/               # 理论词条（10个核心概念）
 │   ├── 📁 methods/              # 方法工具箱
 │   ├── 📁 archive/              # 案例档案
 │   └── 📁 discussion/           # 讨论与议题
 ├── 📁 tools/                    # 研究工具
+│   └── constraint-cli/          # 苏格拉底对话工具
 ├── 📁 site/                     # 网站生成配置
 └── 📁 Public/                   # 生成的网站（GitHub Pages）
 ```
@@ -81,7 +100,7 @@ less-media-art/
 
 - [媒介减法](docs/theory/media-subtraction.md) — 理解"少"的哲学
 - [AI时代的创造力悖论](docs/theory/ai-creativity-paradox.md) — 理解理论背景
-- [约束美学](docs/theory/aesthetics-of-constraint.md) — 限制如何激发创造力
+- [对话式创作](docs/theory/dialogic-creation.md) — 我们的特色方法
 
 ### 2. 搭建环境
 
@@ -96,23 +115,19 @@ ollama pull llama3.2:3b
 ollama run llama3.2:3b
 ```
 
-### 3. 尝试苏格拉底模式（推荐）
+### 3. 尝试苏格拉底模式
 
 ```bash
 cd tools/constraint-cli
-pip install -e .
-
-# 启动十轮批判对话
-constraint-cli --mode socratic --topic "你想探索的主题"
+python socratic.py --topic "创作的意义"
 ```
 
-AI将扮演提问者，通过十轮深入对话帮助你反思，而不是直接给你答案。
+### 4. 提交案例
 
-### 4. 传统约束模式
-
-```bash
-constraint-cli --constraint "仅使用100个token" --log my-first-session.log
-```
+对话结束后，档案自动保存。你可以：
+- 在 `~/.less-media-art/archives/` 找到JSON文件
+- 添加你的反思
+- 提交到项目案例档案
 
 ---
 
@@ -182,6 +197,4 @@ GitHub Actions 会自动部署到 GitHub Pages。
 <p align="center">
   <a href="https://ewanqian.github.io/less-media-art">🌐 访问网站</a> •
   <a href="https://github.com/ewanqian/less-media-art">💻 GitHub</a> •
-  <a href="docs/theory/">📚 理论</a> •
-  <a href="docs/methods/">🛠️ 方法</a>
-</p>
+  <a href="docs/theory/
