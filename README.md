@@ -23,7 +23,7 @@
 
 **少媒体艺术**并非一个宣言式的"学派"，也非一种固定的视觉风格。它是一个**开放的、持续自我质疑的研究框架**，源于对当下数字艺术生产范式的深度关切。
 
-其核心在于：在生成式人工智能以"无限可能性"和"即时生产力"塑造主流艺术话语的今天，我们提出一种以**媒介减法**、**技术内省**与**过程显形**为核心的批判性实践。
+其核心在于：在生成式人工智能以"无限可能性"和"即时生产力"塑造主流艺术话语的今天，我们提出一种以[媒介减法](docs/theory/media-subtraction.md)、[技术内省](docs/theory/technological-introspection.md)与[过程显形](docs/theory/process-visibilization.md)为核心的批判性实践。
 
 ### 核心对立面
 
@@ -38,16 +38,16 @@
 
 | 概念 | 简述 | 标签 |
 |------|------|------|
-| [媒介减法](https://ewanqian.github.io/less-media-art/theory/media-subtraction.html) | 主动减少可用媒介种类或功能的行为 | `核心` `方法论` |
-| [约束美学](https://ewanqian.github.io/less-media-art/theory/aesthetics-of-constraint.html) | 人为限制如何成为创造力的催化剂 | `核心` `美学` |
-| [本地性](https://ewanqian.github.io/less-media-art/theory/locality.html) | 坚持在个人设备上运算与存储的立场 | `核心` `伦理` |
-| [过程显形](https://ewanqian.github.io/less-media-art/theory/process-visibilization.html) | 将隐藏的创作过程作为作品核心 | `核心` `方法论` |
-| [技术内省](https://ewanqian.github.io/less-media-art/theory/technological-introspection.html) | 对创作工具本身的批判性审视 | `核心` `理论` |
-| [后提示词工程](https://ewanqian.github.io/less-media-art/theory/post-prompt-engineering.html) | 将提示词本身作为反思对象 | `核心` `AI` |
-| [摩擦](https://ewanqian.github.io/less-media-art/theory/friction.html) | "不顺畅"在数字创作中的价值 | `核心` `交互` |
-| [小模型](https://ewanqian.github.io/less-media-art/theory/small-models.html) | 轻量级本地AI模型的美学意涵 | `技术` `本地` |
-| [AI时代的创造力悖论](https://ewanqian.github.io/less-media-art/theory/ai-creativity-paradox.html) | 回应Lev Manovich关于AI与创造力的讨论 | `理论语境` `学术对话` |
-| [对话式创作](https://ewanqian.github.io/less-media-art/theory/dialogic-creation.html) | AI作为提问者而非工具，通过对话显形思维 | `核心` `方法论` |
+| [媒介减法](docs/theory/media-subtraction.md) | 主动减少可用媒介种类或功能的行为 | `核心` `方法论` |
+| [约束美学](docs/theory/aesthetics-of-constraint.md) | 人为限制如何成为创造力的催化剂 | `核心` `美学` |
+| [本地性](docs/theory/locality.md) | 坚持在个人设备上运算与存储的立场 | `核心` `伦理` |
+| [过程显形](docs/theory/process-visibilization.md) | 将隐藏的创作过程作为作品核心 | `核心` `方法论` |
+| [技术内省](docs/theory/technological-introspection.md) | 对创作工具本身的批判性审视 | `核心` `理论` |
+| [后提示词工程](docs/theory/post-prompt-engineering.md) | 将提示词本身作为反思对象 | `核心` `AI` |
+| [摩擦](docs/theory/friction.md) | "不顺畅"在数字创作中的价值 | `核心` `交互` |
+| [小模型](docs/theory/small-models.md) | 轻量级本地AI模型的美学意涵 | `技术` `本地` |
+| [AI时代的创造力悖论](docs/theory/ai-creativity-paradox.md) | 回应Lev Manovich关于AI与创造力的讨论 | `理论语境` `学术对话` |
+| [对话式创作](docs/theory/dialogic-creation.md) | AI作为提问者而非工具，通过对话显形思维 | `核心` `方法论` |
 
 ---
 
@@ -197,4 +197,6 @@ GitHub Actions 会自动部署到 GitHub Pages。
 <p align="center">
   <a href="https://ewanqian.github.io/less-media-art">🌐 访问网站</a> •
   <a href="https://github.com/ewanqian/less-media-art">💻 GitHub</a> •
-  <a href="docs/theory/
+  <a href="docs/theory/media-subtraction.md">📚 理论</a> •
+  <a href="docs/methods/environment-setup.md">🛠️ 方法</a>
+</p>
