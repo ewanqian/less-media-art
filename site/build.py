@@ -114,6 +114,9 @@ def process_markdown(md_file):
     md = markdown.Markdown(extensions=MD_EXTENSIONS)
     html_content = md.convert(md_content)
     
+    # 将 .md 链接转换为 .html 链接
+    html_content = re.sub(r'href="([^"]+)\.md"', r'href="\1.html"', html_content)
+    
     # 获取元数据
     meta = md.Meta if hasattr(md, 'Meta') else {}
     title = meta.get('title', [md_file.stem])[0] if meta else md_file.stem
